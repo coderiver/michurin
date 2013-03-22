@@ -1,0 +1,4 @@
+/* default layout */
+.layout { width: 100%; display: inline-block; }
+.layout .l-main { float: left; width: 74%; }
+.layout .l-sidebar { float: right; width: 22%; }
