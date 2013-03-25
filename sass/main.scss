@@ -15,7 +15,10 @@
 	@include sized-sprite($icons, fish);
 }
 
-
+.shark{
+	margin: 40px 0;
+	@include sized-sprite($icons, shark);
+}
 
 .out{
 	@extend %site;
@@ -69,6 +72,7 @@
 	}
 	//socials
 	.header__socials{
+		margin-top: 100px;
 		li{
 			list-style: none;
 			display: inline-block;
@@ -90,11 +94,85 @@
 	.text{
 		p{margin-bottom: 1.7em;}
 	}
-		.title{
+		.text__title{
 			color: #3fc0f0;
 			text-transform: uppercase;
 			font-size: 40px;
 			margin-bottom: 0.8em;
+		}
+		.text__subtitle{
+			color: #fff;
+			font-size: 22px;
+			margin-bottom: 0.8em;
+		}
+		.text__pics{
+			margin-left: -20px;
+			li{
+				list-style: none;
+				float: left;
+				margin-left: 20px;
+				margin-bottom: 30px;
+				padding: 5px;
+				background-color: #fff;
+				@include border-radius(5px);
+				//@include box-shadow(inset 0 0 13px rgba(0,0,0,.39));
+			}
+			a{
+				display: block;
+				width: 100%;
+			}
+			img{
+				display: block;
+				min-width: 387px;
+				max-height: 190px;
+			}
+		}
+		.text__singlepic{
+			@include transition-duration(0.3s);
+			&:hover{
+				@include transform(rotate(-1deg) scale(1.1) translate3d( 0, 0, 0));
+			}
+			&:nth-child(2n+1):hover{
+				@include transform(rotate(1deg) scale(1.1) translate3d( 0, 0, 0));
+			}
+		}
+
+		//pagination
+		.pagination{
+			position: relative;
+			margin-top: 75px;
+			@extend %clr;
+			a{
+				font-size: 28px;
+				text-transform: uppercase;
+				color: #3fc0f0;
+				text-decoration: none;
+			}
+			.pagination__prev{
+				position: relative;
+				float: left;
+				width: 50%;
+				&:before{
+					@include sized-sprite($icons, prev);
+					position: absolute;
+					left: -25px;
+					top: 9px;
+					content: "";
+				}
+			}
+			.pagination__next{
+				text-align: right;
+				position: relative;
+				float: right;
+				width: 50%;
+				&:after{
+					@include sized-sprite($icons, next);
+					position: absolute;
+					right: -25px;
+					top: 9px;
+					content: "";
+				}
+			}
 		}
 	//masonry
 	#container{
@@ -115,3 +193,10 @@
 			}
 		}
 	}
+
+//clr
+.clear{
+	clear: both;
+	overflow: hidden;
+	font-size: 0;
+}
