@@ -4,7 +4,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>Мичурин — креативное агентство</title>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/modernizr-transitions.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/jquery.masonry.min.js"></script>
 	<meta name="viewport" content="width=device-width"/>
 </head>
 <body>
@@ -17,8 +24,79 @@
 
 		<!-- begin content -->
 		<div class="content l-main">
-			<h1>Работы</h1>
-			<img src="http://placedog.com/120/120" alt="" width="120" height="120">
+			<!-- begin text -->
+			<div class="text">
+				<h1 class="title">Работы</h1>
+				<p style="display:none;">Для того чтобы создавать уникальные графические решения, мы стараемся глубоко погрузиться в суть деятельности клиента, чтобы каждая линия в нашей работе имела веское основание для своего существования</p>
+			</div>
+			<!-- /text -->
+			<!-- begin masonry -->
+			<div id="container">
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x210"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x120"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x310"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x240"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x260"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x280"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x240"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x260"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x280"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x240"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x260"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x280"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x140"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x210"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x285"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x140"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x210"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x285"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x140"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x210"></a>
+				</div>
+				<div class="item">
+					<a href="#"><img src="http://placehold.it/140x285"></a>
+				</div>
+			</div>
+			<!-- /masonry -->
 		</div>
 		<!-- /content -->
 
@@ -59,7 +137,7 @@
 					<li><a href="#" class="social social_vk">ВКонтакте</a></li>
 				</ul>
 			</div>
-			<!-- /socials -->
+			<!-- /header__socials -->
 		</header>
 		<!-- /header -->
 
@@ -68,6 +146,13 @@
 
 </div>
 <!-- /out -->
+
+<!-- begin splat -->
+<div class="splat"></div>
+<!-- /splat -->
+<!-- begin fish -->
+<div class="fish"></div>
+<!-- /fish -->
 
 </body>
 </html>

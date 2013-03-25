@@ -1,5 +1,22 @@
 @import "lib/base";
 // styles for mainpage
+.splat{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	@include sized-sprite($icons, splat);
+}
+.fish{
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 0;
+	@include sized-sprite($icons, fish);
+}
+
+
+
 .out{
 	@extend %site;
 }
@@ -59,11 +76,42 @@
 			margin-right: 3px;
 		}
 	}
-		.social{
-			display: block;
-		}
+		.social{display: block;}
 		.social_fb{@include sized-sprite($icons, fb_ico);}
 		.social_tw{@include sized-sprite($icons, tw_ico);}
 		.social_gp{@include sized-sprite($icons, gp_ico);}
 		.social_in{@include sized-sprite($icons, in_ico);}
 		.social_vk{@include sized-sprite($icons, vk_ico);}
+
+//content
+.content{}
+
+	//text
+	.text{
+		p{margin-bottom: 1.7em;}
+	}
+		.title{
+			color: #3fc0f0;
+			text-transform: uppercase;
+			font-size: 40px;
+			margin-bottom: 0.8em;
+		}
+	//masonry
+	#container{
+		.item{
+			float: left;
+			width: 140px;
+			border: 2px solid #3fbfef;
+			background: #070707;
+			font-size: 11px;
+			line-height: 1.4em;
+			margin: 0 18px 20px 0;
+			@include box-shadow(6px 10px 13px rgba(0,0,0,.45));
+			@include transition-duration(0.5s);
+			img{
+				display: block;
+				width: 100%;
+				max-width: 140px;
+			}
+		}
+	}

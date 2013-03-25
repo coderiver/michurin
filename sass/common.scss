@@ -40,50 +40,50 @@
 
 
 
-
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic,latin-ext);
 
 *{margin:0;padding:0;-webkit-text-size-adjust: none; }
+::selection{
+	background:	#ffc000;
+	color:	#fff;
+}
+	::-moz-selection{
+		background:	#ffc000;
+		color:	#fff;
+	}
+	::-webkit-selection{
+		background:	#ffc000;
+		color:	#fff;
+	}
 html, body {
 	min-width: 100%;
 }
 body{
+	font: {
+		family: 'PT Sans Narrow', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+		weight: normal;
+		size: 15px;
+		color: #fff;
+	}
 	position: relative;
 	min-height: 100%;
 	line-height:1.4;
 	color: #fff;
 	background: url(../img/bg.jpg) top left no-repeat;
-	// @include background-size(100%);
-		-webkit-background-size: 	cover !important;
-		-moz-background-size: 		cover !important;
-		background-size: 			cover !important;
-	font: {
-		family: Arial,sans-serif;
-		weight: normal;
-		size: 15px;
-	}
-	&:before{
-		position: absolute;
-		content: "";
-		top: 0;
-		left: 0;
-		@include sized-sprite($icons, splat);
-	}
-	&:after{
-		position: absolute;
-		content: "";
-		bottom: 0;
-		left: 0;
-		@include sized-sprite($icons, fish);
-	}
+				-webkit-background-size: 	cover;
+				-moz-background-size: 		cover;
+				background-size: 			cover;
+				background-attachment: 		fixed;
 }
 // resets
 a img,fieldset{
 	border:none;
 	}
 a{
-	color:#00919e;
+	color:#fff;
+	text-decoration: underline;
 	&:hover{
-
+		text-decoration: none;
 	}
 }
 // headings
@@ -91,6 +91,7 @@ h1,h2,h3,h4,h5{
 	color: #3fc0f0;
 	text-transform: uppercase;
 	font-size: 40px;
+	font-weight: normal;
 }
 // common styles, these could be attached to any block with "@extend %wyswyg;"
 %wyswyg{
