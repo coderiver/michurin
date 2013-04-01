@@ -149,15 +149,15 @@
 				max-height: 190px;
 			}
 		}
-		.text__singlepic{
-			@include transition-duration(0.3s);
-			&:hover{
-				@include transform(rotate(-1deg) scale(1.1) translate3d( 0, 0, 0));
-			}
-			&:nth-child(2n+1):hover{
-				@include transform(rotate(1deg) scale(1.1) translate3d( 0, 0, 0));
-			}
-		}
+		// .text__singlepic{
+		// 	@include transition-duration(0.3s);
+		// 	&:hover{
+		// 		@include transform(rotate(-1deg) scale(1.1) translate3d( 0, 0, 0));
+		// 	}
+		// 	&:nth-child(2n+1):hover{
+		// 		@include transform(rotate(1deg) scale(1.1) translate3d( 0, 0, 0));
+		// 	}
+		// }
 
 		//pagination
 		.pagination{
@@ -207,7 +207,6 @@
 			line-height: 1.4em;
 			margin: 0 18px 20px 0;
 			@include box-shadow(6px 10px 13px rgba(0,0,0,.45));
-			@include transition-duration(0.5s);
 			img{
 				display: block;
 				width: 100%;
