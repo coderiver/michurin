@@ -25,13 +25,13 @@
 		<!-- begin content -->
 		<div class="content l-main">
 			<!-- begin text -->
-			<div class="text">
-				<h1 class="text__title">Графический дизайн</h1>
+			<section class="text">
+				<h1 class="h1">Графический дизайн</h1>
 				<p>Для того чтобы создавать уникальные графические решения, мы стараемся глубоко погрузиться в суть деятельности клиента, чтобы каждая линия в нашей работе имела веское основание для своего существования</p>
-			</div>
+			</section>
 			<!-- /text -->
-			<!-- begin masonry -->
-			<div id="container">
+			<!-- begin js-masonry -->
+			<section id="js-masonry">
 				<div class="item">
 					<a href="#"><img src="http://placehold.it/140x210"></a>
 				</div>
@@ -95,8 +95,8 @@
 				<div class="item">
 					<a href="#"><img src="http://placehold.it/140x285"></a>
 				</div>
-			</div>
-			<!-- /masonry -->
+			</section>
+			<!-- /js-masonry -->
 		</div>
 		<!-- /content -->
 
@@ -108,22 +108,88 @@
 			<!-- begin nav -->
 			<nav class="nav">
 				<ul class="nav__primary">
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">Клиенты</a></li>
-					<li><a href="#">Услуги</a>
-						<ul class="nav__secondary">
-							<li><a href="#">Комплексные рекламные кампании</a></li>
-							<li><a href="#">Корпоративная идентификация</a></li>
-							<li><a href="#">Стратегия</a></li>
-							<li><a href="#">Графический дизайн</a></li>
-							<li><a href="#">Упаковка</a></li>
-							<li><a href="#">Видео</a></li>
-							<li><a href="#">Радио</a></li>
-							<li><a href="#">Принт</a></li>
-							<li><a href="#">Digital-кампании</a></li>
-						</ul>
+					<li class="js-accordion">
+						<h3 class="nav__item">О нас</h3>
+						<div class="nav__text" style="display:none;">
+							<p>Будьте селективны!</p>
+
+							<p>В душЕ мы, креативное агентство «Мичурин», – селекционеры.</p>
+
+							<p>Нас тянет к хорошим клиентам, которые попадают к нам, проходя строгий жизненный отбор.</p>
+
+							<p>Мы выбираем только лучшие идеи для ваших рекламных кампаний.</p>
+ 
+							<p>Работаем с самыми профессиональными подрядчиками, чтобы решить ваши задачи наилучшим образом.</p>
+
+							<p>Отбираем только самые талантливые кадры, которые задерживаются у нас исключительно благодаря своим умениям.</p>
+
+							<p>Отслеживаем новейшие тренды и предлагаем собственные
+							рекламные решения.</p>
+						</div>
 					</li>
-					<li><a href="#">Блог</a></li>
+					<li class="js-accordion">
+						<h3 class="nav__item">Клиенты</h3>
+						<div class="nav__text" style="display:none;">
+							<ul class="nav__secondary">
+								<li><a href="#">Амстор</a></li>
+								<li><a href="#">Любимов</a></li>
+								<li><a href="#">Viasat</a></li>
+								<li><a href="#">Фокстрот</a></li>
+								<li><a href="#">КЛО</a></li>
+								<li><a href="#">Premialle</a></li>
+								<li><a href="#">Еврошина</a></li>
+								<li><a href="#">mmr</a></li>
+								<li><a href="#">EVA</a></li>
+								<li><a href="#">ВОЛЯ</a></li>
+								<li><a href="#">Nissan</a></li>
+								<li><a href="#">Unicef</a></li>
+								<li><a href="#">Премия</a></li>
+								<li><a href="#">СушиЯ</a></li>
+								<li><a href="#">Subaru</a></li>
+								<li><a href="#">Arterium</a></li>
+								<li><a href="#">Life</a></li>
+								<li><a href="#">УГМК</a></li>
+								<li><a href="#">Dolce Vita</a></li>
+							</ul>
+							<ul class="nav__secondary">
+								<li><a href="#">Unicef</a></li>
+								<li><a href="#">Премия</a></li>
+								<li><a href="#">СушиЯ</a></li>
+								<li><a href="#">Subaru</a></li>
+								<li><a href="#">Arterium</a></li>
+								<li><a href="#">Life</a></li>
+								<li><a href="#">УГМК</a></li>
+								<li><a href="#">Dolce Vita</a></li>
+								<li><a href="#">Las Vegas</a></li>
+								<li><a href="#">Concorde</a></li>
+								<li><a href="#">WOG</a></li>
+								<li><a href="#">LUMH</a></li>
+								<li><a href="#">Don Pion</a></li>
+								<li><a href="#">Амстор</a></li>
+								<li><a href="#">Любимов</a></li>
+								<li><a href="#">Viasat</a></li>
+								<li><a href="#">Фокстрот</a></li>
+								<li><a href="#">КЛО</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="js-accordion">
+						<h3 class="nav__item">Услуги</h3>
+						<div class="nav__text" style="display:none;">
+							<ul class="nav__secondary">
+								<li><a href="#">Комплексные рекламные кампании</a></li>
+								<li><a href="#">Корпоративная идентификация</a></li>
+								<li><a href="#">Стратегия</a></li>
+								<li><a href="#">Графический дизайн</a></li>
+								<li><a href="#">Упаковка</a></li>
+								<li><a href="#">Видео</a></li>
+								<li><a href="#">Радио</a></li>
+								<li><a href="#">Принт</a></li>
+								<li><a href="#">Digital-кампании</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#"><h3 class="nav__item">Блог</h3></a></li>
 				</ul>
 			</nav>
 			<!-- /nav -->
