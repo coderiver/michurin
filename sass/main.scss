@@ -199,18 +199,53 @@
 	//masonry
 	#js-masonry{
 		.item{
+			position: relative;
 			float: left;
-			width: 140px;
-			border: 2px solid #3fbfef;
+			width: 144px;
 			background: #070707;
 			font-size: 11px;
 			line-height: 1.4em;
 			margin: 0 18px 20px 0;
 			@include box-shadow(6px 10px 13px rgba(0,0,0,.45));
+			@include box-sizing(border-box);
 			img{
 				display: block;
 				width: 100%;
 				max-width: 140px;
+				border: 2px solid #3fbfef;
+			}
+			.item__info{
+				display: none;
+			}
+			&:hover{
+				.item__info{
+				border: 7px solid #fdc31c;
+					display: block;
+					background: rgba(255,255,255,.7);
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					color: #000;
+					.h1{
+						font-size: 26px;
+						font-family: 'PT Sans Narrow', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+						font-weight: bold;
+						text-transform: capitalize;
+						color: #000;
+						margin-bottom: 0.2em;
+					}
+					p{
+						font-size: 15px;
+					}
+				}
+			}
+			.item__text{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				padding: 10px;
 			}
 		}
 	}

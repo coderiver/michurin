@@ -97,7 +97,12 @@ h1, h2, h3, h4, h5 { color: #3fc0f0; text-transform: uppercase; font-size: 40px;
 .pagination .pagination__next { text-align: right; position: relative; float: right; width: 50%; }
 .pagination .pagination__next:after { background: url('../img/icons-sf565e84d8e.png') 0 -1008px no-repeat; width: 15px; height: 22px; position: absolute; right: -25px; top: 9px; content: ""; }
 
-#js-masonry .item { float: left; width: 140px; border: 2px solid #3fbfef; background: #070707; font-size: 11px; line-height: 1.4em; margin: 0 18px 20px 0; -webkit-box-shadow: 6px 10px 13px rgba(0, 0, 0, 0.45); -moz-box-shadow: 6px 10px 13px rgba(0, 0, 0, 0.45); box-shadow: 6px 10px 13px rgba(0, 0, 0, 0.45); }
-#js-masonry .item img { display: block; width: 100%; max-width: 140px; }
+#js-masonry .item { position: relative; float: left; width: 144px; background: #070707; font-size: 11px; line-height: 1.4em; margin: 0 18px 20px 0; -webkit-box-shadow: 6px 10px 13px rgba(0, 0, 0, 0.45); -moz-box-shadow: 6px 10px 13px rgba(0, 0, 0, 0.45); box-shadow: 6px 10px 13px rgba(0, 0, 0, 0.45); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+#js-masonry .item img { display: block; width: 100%; max-width: 140px; border: 2px solid #3fbfef; }
+#js-masonry .item .item__info { display: none; }
+#js-masonry .item:hover .item__info { border: 7px solid #fdc31c; display: block; background: rgba(255, 255, 255, 0.7); position: absolute; top: 0; left: 0; bottom: 0; right: 0; color: #000; }
+#js-masonry .item:hover .item__info .h1 { font-size: 26px; font-family: 'PT Sans Narrow', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; font-weight: bold; text-transform: capitalize; color: #000; margin-bottom: 0.2em; }
+#js-masonry .item:hover .item__info p { font-size: 15px; }
+#js-masonry .item .item__text { position: absolute; bottom: 0; left: 0; padding: 10px; }
 
 .clear { clear: both; overflow: hidden; font-size: 0; }
