@@ -15,7 +15,7 @@
 
 html, body { min-width: 100%; }
 
-body { font-family: 'PT Sans Narrow', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; font-weight: normal; font-size: 15px; font-color: #fff; position: relative; min-height: 100%; line-height: 1.4; color: #fff; background: url(../img/bg.jpg) top left no-repeat; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; background-attachment: fixed; }
+body { font-family: 'PT Sans Narrow', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; font-weight: normal; font-size: 15px; font-color: #fff; position: relative; min-height: 100%; min-width: 1150px; line-height: 1.4; color: #fff; background: url(../img/bg.jpg) top left no-repeat; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; background-attachment: fixed; }
 
 a img, fieldset { border: none; }
 
@@ -25,6 +25,8 @@ a:hover { text-decoration: none; }
 h1, h2, h3, h4, h5 { color: #3fc0f0; text-transform: uppercase; font-size: 40px; font-weight: normal; }
 
 .out { width: 1100px; margin: auto; }
+@media only screen and (min-width: 1400px) { .out { width: 1315px; } }
+@media only screen and (max-width: 1100px) { .out { width: 1100px; } }
 
 .header__logo a, .header__socials li { font: 0/0 a; text-shadow: none; color: transparent; }
 

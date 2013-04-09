@@ -9,7 +9,7 @@
 
 html, body { min-width: 100%; }
 
-body { font-family: 'PT Sans Narrow', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; font-weight: normal; font-size: 15px; font-color: #fff; position: relative; min-height: 100%; line-height: 1.4; color: #fff; background: url(../img/bg.jpg) top left no-repeat; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; background-attachment: fixed; }
+body { font-family: 'PT Sans Narrow', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; font-weight: normal; font-size: 15px; font-color: #fff; position: relative; min-height: 100%; min-width: 1150px; line-height: 1.4; color: #fff; background: url(../img/bg.jpg) top left no-repeat; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; background-attachment: fixed; }
 
 a img, fieldset { border: none; }
 
